@@ -1,0 +1,23 @@
+# Starter pipeline con un par de mamadeces extra 😎
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- script: |
+    echo "La fecha actual es: $(date)"
+    echo "Contando del 1 al 5..."
+    for i in 1 2 3 4 5; do
+      echo "Número $i"
+    done
+  displayName: 'Run some mamadeces'
