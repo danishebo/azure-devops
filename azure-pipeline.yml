@@ -1,0 +1,9 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo "Hola, este es mi primer pipeline en Azure DevOps"
+  displayName: 'Ejecutar un script simple'
